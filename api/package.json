@@ -1,4 +1,5 @@
 {
+  "name": "api",
   "private": true,
   "dependencies": {
     "@redwoodjs/api": "1.0.0",
