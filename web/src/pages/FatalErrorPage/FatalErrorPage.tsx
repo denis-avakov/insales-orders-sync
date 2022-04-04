@@ -8,10 +8,10 @@
 // thoughtful. =)
 
 // Ensures that production builds do not include the error page
-let RedwoodDevFatalErrorPage = undefined
+let RedwoodDevFatalErrorPage = undefined;
 if (process.env.NODE_ENV === 'development') {
   RedwoodDevFatalErrorPage =
-    require('@redwoodjs/web/dist/components/DevFatalErrorPage').DevFatalErrorPage
+    require('@redwoodjs/web/dist/components/DevFatalErrorPage').DevFatalErrorPage;
 }
 
 export default RedwoodDevFatalErrorPage ||
@@ -49,7 +49,7 @@ export default RedwoodDevFatalErrorPage ||
                 line-height: 1;
                 color: #2D3748;
               }
-            `,
+            `
         }}
       />
       <section>
@@ -58,4 +58,4 @@ export default RedwoodDevFatalErrorPage ||
         </h1>
       </section>
     </main>
-  ))
+  ));

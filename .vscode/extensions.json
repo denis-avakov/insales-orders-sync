@@ -1,14 +1,11 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "eamodio.gitlens",
-    "ofhumanbondage.react-proptypes-intellisense",
-    "mgmcdermott.vscode-language-babel",
-    "wix.vscode-import-cost",
-    "pflannery.vscode-versionlens",
     "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
     "prisma.prisma",
-    "graphql.vscode-graphql"
+    "graphql.vscode-graphql",
+    "bradlc.vscode-tailwindcss"
   ],
   "unwantedRecommendations": []
 }

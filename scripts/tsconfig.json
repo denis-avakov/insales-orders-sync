@@ -1,36 +1,22 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "$api/*": ["../api/*"],
+      "$web/*": ["../web/*"],
+      "$web/src/*": ["../.redwood/types/mirror/web/src/*", "../web/src/*"],
+      "api/*": ["../api/*"],
+      "types/*": ["../api/types/*", "../types/*", "../web/types/*"],
+      "web/*": ["../web/*"],
+      "web/src/*": ["../.redwood/types/mirror/web/src/*", "../web/src/*"]
+    },
+    "typeRoots": ["../node_modules/@types"],
     "noEmit": true,
     "allowJs": true,
     "esModuleInterop": true,
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "$api/*": [
-        "../api/*",
-      ],
-      "api/*": [
-        "../api/*",
-      ],
-      "$web/*": [
-        "../web/*",
-      ],
-      "web/*": [
-        "../web/*",
-      ],
-      "$web/src/*": [
-        "../web/src/*",
-        "../.redwood/types/mirror/web/src/*"
-      ],
-      "web/src/*": [
-        "../web/src/*",
-        "../.redwood/types/mirror/web/src/*"
-      ],
-      "types/*": ["../types/*", "../web/types/*", "../api/types/*"],
-    },
-    "typeRoots": ["../node_modules/@types"],
     "jsx": "preserve",
-  },
+    "target": "esnext"
+  }
 }

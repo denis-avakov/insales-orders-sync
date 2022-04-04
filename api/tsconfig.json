@@ -1,29 +1,20 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@redwoodjs/testing": ["../node_modules/@redwoodjs/testing/api"],
+      "src/*": ["../.redwood/types/mirror/api/src/*", "./src/*"],
+      "types/*": ["../types/*", "./types/*"]
+    },
+    "rootDirs": ["../.redwood/types/mirror/api/src", "./src"],
+    "typeRoots": ["../node_modules/@types", "./node_modules/@types"],
+    "types": ["jest"],
     "noEmit": true,
     "allowJs": true,
     "esModuleInterop": true,
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "baseUrl": "./",
-    "rootDirs": [
-      "./src",
-      "../.redwood/types/mirror/api/src"
-    ],
-    "paths": {
-      "src/*": [
-        "./src/*",
-        "../.redwood/types/mirror/api/src/*"
-      ],
-      "types/*": ["./types/*", "../types/*"],
-      "@redwoodjs/testing": ["../node_modules/@redwoodjs/testing/api"]
-    },
-    "typeRoots": [
-      "../node_modules/@types",
-      "./node_modules/@types"
-    ],
-    "types": ["jest"],
+    "target": "esnext"
   },
   "include": [
     "src",
